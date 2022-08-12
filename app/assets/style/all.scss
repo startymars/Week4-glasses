@@ -1,23 +1,8 @@
-$color: #44df22;
+@import "variable";
+@import "reset";
+@import "mixin";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+//page
+@import "layout";
+@import "index";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}

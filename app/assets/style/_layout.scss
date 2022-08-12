@@ -1,0 +1,182 @@
+body{
+    line-height: $line-height;
+    font-family: 'Noto Sans','Roboto',sans-serif
+}
+header{
+    background-color: $primary;
+    font-size:$h5-font-size;
+    
+    height: 80px;
+    img{
+        display: inline-block;
+        width: 80px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 130px;
+        &-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            a{
+                color: $white;
+                text-decoration: none;
+            }
+
+            a:hover{
+                color: $dark;
+            }
+        }
+
+        @include ipad(){
+            padding: 15px 50px;
+        }
+    }
+
+   
+}
+
+
+footer{
+    background-color: $primary;
+    color: $white;
+    padding-left:20px;
+    padding-right: 20px;
+    
+    .footer{
+
+        &-top{
+            border-bottom: 1px solid $white;
+            display: flex;
+            justify-content: space-between;
+
+           
+        }
+
+        &-menu{
+            display: flex;
+            justify-content: center;
+           
+
+            a{
+                color: $white;
+                text-decoration: none;
+            }
+        
+            @include mobile(){
+               display: none;
+              
+            }
+        }
+
+
+        &-bottom{
+            display: flex;
+            justify-content: space-between;
+
+            @include mobile(){
+                flex-direction: column;
+               
+            }
+
+            .copy-right{
+
+                @include mobile(){
+                    padding-top: 16px;
+                    padding-bottom: 0;
+                }    
+            }
+
+            .policy{
+                display: flex;
+
+                @include mobile(){
+                    flex-direction: column;
+                    padding-bottom: 8px;
+                   
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+
+
+.footer-icon{
+
+    @include mobile(){
+        padding-bottom: 24px;
+    }
+
+    .text{
+        font-size:$h3-font-size;
+
+        @include mobile(){
+            font-size: $font-size-base;
+        }
+    }
+   
+    a{
+        font-size:$h3-font-size;
+        color:$white;
+        text-decoration: none;
+
+        @include mobile(){
+            font-size: $font-size-base;
+        }
+    }
+
+    @include mobile(){
+       padding-top: 24px;
+       
+     }
+}
+
+
+.contact-icon{
+   
+    margin-top: 48px;
+
+    @include mobile(){
+        margin-top: 24px;
+        
+    }
+
+    .right-icon{
+        display: flex;
+        justify-content: center;
+
+        .mr-16{
+            margin-right: 16px;
+        }
+
+
+        img{
+            width: 48px;
+            height: 48px;
+
+            @include ipad(){
+                
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+    }
+}    
+
+
+
+
