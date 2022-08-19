@@ -11,6 +11,7 @@
             font-size:32px;
             width: 30%;
             text-align: center;
+            border-bottom: 10px solid transparent;
            
 
             @include ipad(){
@@ -156,6 +157,14 @@
                 text-decoration: none;
                 padding: 12px 20px;
                 color:#555555;
+
+                @include ipad(){
+                    padding: 6px 10px;
+                }
+
+                @include mobile(){
+                    padding: 16px 10px;
+                }
 
                 &:hover{
                     background-color: $dark;

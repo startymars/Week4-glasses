@@ -66,15 +66,19 @@
         .blog-image{
            
             width: 100%;
+           
             padding-right: 24px;
+            
 
             @include mobile(){
                 margin-bottom: 8px;
+                padding: 0;
             }
 
             img{
                 max-width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: cover;
                 vertical-align: middle;
             }
         }
@@ -146,38 +150,5 @@
     
 }
 
-.change-page{
 
-
-
-    .page-button{
-        display: flex;
-        justify-content: center;
-        font-size: $h5-font-size;
-
-        .button{
-           
-            border:1px solid #555555;
-           
-            a{
-                display: block;
-                text-decoration: none;
-                padding: 12px 20px;
-                color:#555555;
-
-                &:hover{
-                    background-color: $dark;
-                    color:$white;
-                }
-            }
-
-
-        }
-
-        .next{
-           background-color:#F2F2F2;
-        }
-
-    }
-}
 

@@ -13,7 +13,6 @@ header{
        
         h1{
             
-
             @include mobile(){
 
                 padding: 20px;
@@ -116,6 +115,13 @@ footer{
             @include mobile(){
                display: none;
               
+            }
+        }
+
+        &-icon{
+
+            a:hover{
+                color: $dark;
             }
         }
 
@@ -222,6 +228,52 @@ footer{
 
     }
 }    
+
+.change-page{
+
+    .page-button{
+        display: flex;
+        justify-content: center;
+        font-size: $h5-font-size;
+
+        .button{
+           
+            border:1px solid #555555;
+            font-size: 19px;
+           
+            a{
+                display: block;
+                text-decoration: none;
+                padding: 12px 20px;
+                color:#555555;
+
+                @include ipad(){
+                   
+                    font-size: 16px;
+           
+                }
+
+                @include mobile(){
+                    padding: 12px 10px;
+                   
+                }
+
+                &:hover{
+                    background-color: $dark;
+                    color:$white;
+                }
+            }
+
+        }
+
+        .next{
+           background-color:#F2F2F2;
+        }
+
+    }
+}
+
+
 
 
 
